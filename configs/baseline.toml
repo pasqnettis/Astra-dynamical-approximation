@@ -1,0 +1,18 @@
+[simulation]
+final_time = 1.0
+steps = 256
+epsilon = 0.001
+alpha = 0.2
+iterations = 20
+quadrature_points = 19
+validation_points = 65
+seed = 0
+linear_solver = "qr"
+
+[initialization]
+adam_steps = 20000
+learning_rate = 0.001
+learning_rate_late = 0.0001
+decay_step = 10000
+validation_every = 100
+passes = [{ steps = 100, epsilon = 0.0001 }, { steps = 200, epsilon = 0.00001 }]

@@ -1,0 +1,10 @@
+# Expensive reproduction target; initialization and quadratic-alpha choices are documented.
+[simulation]
+final_time = 1.0
+steps = 16384
+epsilon = 0.00001
+alpha = 0.2
+iterations = 20
+quadrature_points = 19
+validation_points = 65
+linear_solver = "qr"
